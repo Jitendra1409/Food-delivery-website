@@ -1,0 +1,217 @@
+*{
+    padding : 0;
+    margin: 0;
+}
+:root{
+    --navbar-height : 20px;
+}
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top:0px;
+}
+
+/* Navigation Bar : logo and Image */
+#logo{
+margin : 10px 34px;
+}
+
+logo img{
+height: 56px;
+margin: 34px 45px;
+}
+
+/* Navigation Bar : List style */
+#navbar ul{
+    display: flex;
+    font-family: 'Inter', sans-serif;
+}
+
+#navbar::before{
+    content : "";
+    background-color: black;
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#navbar ul li{
+list-style: none;
+font-size: 1.3rem;
+}
+#navbar ul li a{
+    display : block;
+    padding : 3px 22px;
+    border-radius : 22px;
+    text-decoration: none;
+    color: white;
+    }
+
+    #navbar ul li a:hover{
+       color: black;
+       background-color: white;
+     }
+
+     #home{
+        display: flex;
+        flex-direction: column;
+        padding: 3px 200px;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+     }
+
+     #home::before{
+        content : "";
+        background: url('Pasta.jpg') no-repeat center center/cover;
+        position:absolute;
+        top:-15px;
+        left:0px;
+        height: 650px;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.89;
+     }
+     .h-primary{
+        font-size: 3.8rem;
+        padding: 12px;
+        font-family: 'Bree Serif', serif;
+        color: azure;
+     }
+    .h-secondary{
+            font-size: 1.5rem;
+            padding: 12px;
+     }
+     #home h1{
+        color:white;
+        text-align:center;
+        font-family: 'Bree Serif', serif;
+     }
+
+     #home p{
+        color:white;
+        text-align:center;
+        font-family: 'Bree Serif', serif;
+     }
+     .btn{
+       padding: 6px 20px;
+       border : 2px solid white;
+       margin : 25px;
+       border-radius: 4rem;
+       font-style: bold;
+       cursor: pointer;
+       color:blue;
+     }
+     .btn:hover{
+       background-color: aquamarine;
+      }
+
+
+      #services{
+         margin:125px;
+         display:flex;
+      }
+
+      #services .box{
+        border: 4px solid purple;
+        padding: 34px;
+        margin: -79px 59px;
+        border-radius: 21px;
+        background-color: aliceblue;
+      }
+
+      #services .box img{
+        height: 160px;
+        margin: auto;
+        display: block;
+        border-radius: 21px ;
+        
+      }
+      .center{
+        text-align: center;
+      }
+
+      /* #client-section{
+
+      } */
+
+      #clients{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .client-Item{
+        padding: 34px;
+      }
+
+      .h-primary-center{
+        font-size: 2.3rem;
+        text-align: center;
+        justify-content: center;
+       
+      }
+
+      #client-section::before{
+        content: " ";
+        position: absolute;
+        background: url('platter.jpg') no-repeat center center/cover;
+        width: 100%;
+        height:80%;
+        z-index: -1;
+        opacity: 0.7;
+      }
+
+      #client-section{
+        height: 344px;
+        position: relative;
+      }
+      #contact{
+        position: relative;
+      }
+      #contact::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 150%;
+        z-index: -1;
+        opacity: 0.7;
+        background: url('phone.jpg') no-repeat center center/cover;
+      }
+
+      #contact-box input
+      {
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 9px;
+        font-size: 1.5rem;
+      }
+      #contact-box textarea{
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 9px;
+        font-size: 1.5rem;
+      }
+      
+      #contact-box{
+        display: flex;
+        align-items: right;
+        justify-content: center;
+        padding-bottom: 34px;
+        height: calc(100vh - var(--navbar-height));
+      }
+
+      #contact-box form{
+        width: 40%
+      }
+      #contact-box label{
+        font-size: 1.3rem;
+      }
+      footer{
+        background: black;
+        color: white;
+        padding: 9px 20px;
+      }
